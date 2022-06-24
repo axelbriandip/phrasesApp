@@ -2,8 +2,8 @@ import React from 'react';
 
 const PhraseBox = ({phrase}) => {
     return (
-        <div>
-            <p>{phrase}</p>
+        <div className='container-phrase'>
+            <span className='phrase'>{phrase}</span>
         </div>
     );
 };

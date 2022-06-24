@@ -2,8 +2,8 @@ import React from 'react';
 
 const AuthorBox = ({name}) => {
     return (
-        <div>
-            <h1>{name}</h1>
+        <div className='container-author'>
+            <span className='author'>{name}</span>
         </div>
     );
 };

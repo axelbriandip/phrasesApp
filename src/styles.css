@@ -4,3 +4,39 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.quote-box {
+  background-color: red;
+  width: 35rem;
+  height: 12rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.container-phrase {
+  width: 85%;
+  height: 4rem;
+  text-align: center;
+}
+
+.container-author .author {
+  font-style: italic;
+}
+
+.buttonChangeQuote {
+  background-color: #fff;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
