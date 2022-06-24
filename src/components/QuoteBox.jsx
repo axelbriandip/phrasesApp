@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import quotes from '../quotes.json';
+import AuthorBox from './AuthorBox';
+import PhraseBox from './PhraseBox';
 
 const QuoteBox = () => {
     const random = Math.floor(Math.random() * quotes.length);
@@ -14,8 +16,8 @@ const QuoteBox = () => {
 
     return (
         <div>
-            <h1>{author}</h1>
-            <p>{phrase}</p>
+            <AuthorBox name={author}/>
+            <PhraseBox phrase={phrase}/>
             <button onClick={changeQuote}>Cambiar autor</button>
         </div>
     );
