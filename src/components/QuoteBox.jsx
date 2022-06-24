@@ -12,15 +12,17 @@ const QuoteBox = () => {
     }
     const colors = ["#c8ca66", "#c63637", "#42ab49", "#5086c1", "#a68069", "#8f7193"];
     const indexRandomColor = Math.floor(Math.random() * colors.length);
+    const color = colors[indexRandomColor];
 
     const author = quotes[index].author;
     const phrase = quotes[index].quote;
 
+    document.body.style.backgroundColor = color;
     return (
-        <div className='quote-box'>
+        <div className='quote-box' style={{color: `${color}`}}>
             <PhraseBox phrase={phrase}/>
             <AuthorBox name={author}/>
-            <div className='buttonChangeQuote' onClick={changeQuote}></div>
+            <div className='buttonChangeQuote' style={{backgroundColor: `${color}`}} onClick={changeQuote}></div>
         </div>
     );
 };
