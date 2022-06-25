@@ -26,9 +26,19 @@
 }
 
 .container-phrase {
-  width: 85%;
   height: 4rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container-phrase .phrase {
+  width: 85%;
+}
+
+.container-phrase .quote {
+  font-size: 2rem;
 }
 
 .container-author .author {
@@ -40,4 +50,7 @@
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

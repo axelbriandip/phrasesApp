@@ -20,9 +20,11 @@ const QuoteBox = () => {
     document.body.style.backgroundColor = color;
     return (
         <div className='quote-box' style={{color: `${color}`}}>
-            <PhraseBox phrase={phrase}/>
+            <PhraseBox phrase={phrase} color={color}/>
             <AuthorBox name={author}/>
-            <div className='buttonChangeQuote' style={{backgroundColor: `${color}`}} onClick={changeQuote}></div>
+            <div className='buttonChangeQuote' style={{backgroundColor: `${color}`}} onClick={changeQuote}>
+                <i className="fa-solid fa-angle-right" style={{color: "#eee"}}></i>
+            </div>
         </div>
     );
 };
